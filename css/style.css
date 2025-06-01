@@ -547,6 +547,37 @@ footer {
     margin-right: auto;
 }
 
+.footer-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffcc00;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+.contact-icon {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+    transform: scale(1.2);
+}
+
 /* Responsividade */
 @media (max-width: 1024px) {
     .hero, .ebook-container {
